@@ -1,0 +1,7 @@
+O "this" no pode variar quando declarado em uma "function", e varia de acordo de como é chamado.
+
+function f1() { console.log(this === window)} ----> Este exemplo o this pode ser ele mesmo ou pode variar de pendendo de como é chamado
+
+Quando utilizamos a função Arrow, o this não vai variar de acordo com a chamada, será sempre o que foi definido dentro dafunção.
+
+const f3() => console.log(this === window) ----> Este exemplo estou declarando uma função Arrow que fica dentro do escopo global, ou seja, o this não irá variar.
